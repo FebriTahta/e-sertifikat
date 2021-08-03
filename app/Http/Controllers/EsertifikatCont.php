@@ -20,7 +20,7 @@ class EsertifikatCont extends Controller
         return view('e_sertifikat.list',compact('diklat'));
     }
 
-    public function data(Request $request, $diklat_id)
+    public function data(Request $request)
     {
         if(request()->ajax())
         {

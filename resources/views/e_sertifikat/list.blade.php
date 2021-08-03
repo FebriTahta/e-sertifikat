@@ -170,7 +170,7 @@
                 processing: true,
                 serverSide: true,
                 ajax: {
-                    url:'/data/'+diklat,
+                    url:"{{ route('data.e_sertifikat')}}",
                 },
                 columns: [
                     {data:'no',name:'no'},
