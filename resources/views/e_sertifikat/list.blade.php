@@ -169,7 +169,7 @@
                 processing: true,
                 serverSide: true,
                 ajax: {
-                    url:'/data/certificate/'+diklat,
+                    url:'/data/'+diklat,
                 },
                 columns: [
                     {data:'no',name:'no'},
