@@ -20,10 +20,10 @@ class EsertifikatCont extends Controller
         return view('e_sertifikat.list',compact('diklat'));
     }
 
-    public function data($diklat_id)
+    public function data($id)
     {
         
-            $data   = Certificate::where('pelatihan_id',$diklat_id)->orderBy('no','asc');
+            $data   = Certificate::where('pelatihan_id',$id)->orderBy('no','asc');
                 return DataTables::of($data)
                 ->addColumn('download',function($data){
                     $ok = '<a href="'.$data->link.'" target="_blank" class="btn btn-sm btn-success text-white">unduh</a>';

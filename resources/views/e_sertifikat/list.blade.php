@@ -162,15 +162,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
     <script>
         $(document).ready(function(){
-            var diklat = $('#diklat').val();
-            console.log(diklat);
+            var id = $('#diklat').val();
+            console.log(id);
             $('#data').DataTable({
                 //karena memakai yajra dan template maka di destroy dulu biar ga dobel initialization
                 destroy: true,
                 processing: true,
                 serverSide: true,
                 ajax: {
-                    url:"/data/"+diklat,
+                    url:'/data/'+id,
                 },
                 columns: [
                     {data:'no',name:'no'},
