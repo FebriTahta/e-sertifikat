@@ -21,4 +21,5 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::get('/e-sertifikat',[EsertifikatCont::class, 'index'])->name('index.e_sertifikat');
-Route::get('/e-sertifikat/{slug_diklat}',[EsertifikatCont::class, 'list'])->name('list.e_sertifikat');
+Route::get('/data/e-certificate/{diklat_id}',[EsertifikatCont::class, 'data'])->name('data.e_sertifikat');
+Route::get('/{slug_diklat}',[EsertifikatCont::class, 'list'])->name('list.e_sertifikat');

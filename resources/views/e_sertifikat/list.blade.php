@@ -179,7 +179,7 @@
                     },
                     {
                     data:'name',
-                    name:'peserta.name'
+                    name:'name'
                     },
                     {
                     data:'download',
