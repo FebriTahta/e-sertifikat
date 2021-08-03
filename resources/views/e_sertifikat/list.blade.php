@@ -161,8 +161,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
     <script>
-        var diklat = $('#diklat').val();
-        console.log(diklat);
+        $(document).ready(function(){
+            var diklat = $('#diklat').val();
+            console.log(diklat);
             $('#data').DataTable({
                 //karena memakai yajra dan template maka di destroy dulu biar ga dobel initialization
                 destroy: true,
@@ -177,6 +178,7 @@
                     {data:'download',name:'download'},
                    
                 ]
-                });
+            });
+        });
     </script>
 @endsection
