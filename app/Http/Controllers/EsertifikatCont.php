@@ -20,11 +20,11 @@ class EsertifikatCont extends Controller
         return view('e_sertifikat.list',compact('diklat'));
     }
 
-    public function data(Request $request)
+    public function data(Request $request,$diklat_id)
     {
         if(request()->ajax())
         {
-            $data   = Certificate::orderBy('no','asc');
+            $data   = Certificate::where('pelatihan_id',$diklat_id)->orderBy('no','asc');
                 return DataTables::of($data)
                 ->addColumn('download',function($data){
                     $ok = '<a href="'.$data->link.'" target="_blank" class="btn btn-sm btn-success text-white">unduh</a>';
