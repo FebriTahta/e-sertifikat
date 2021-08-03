@@ -47,7 +47,7 @@
             </div>
         </div>
         <div class="card">
-            <input type="hidden" value="{{ $diklat->id }}" id="diklat">
+            <input type="text" value="{{ $diklat->id }}" id="diklat">
             <div class="card-body">
                 <div class="auto-container">
                     <!-- Sec Title Two -->
