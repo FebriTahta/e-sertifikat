@@ -172,18 +172,9 @@
                     url:'/data/certificate/'+diklat,
                 },
                 columns: [
-                    {
-                    data:'no',
-                    name:'no'
-                    },
-                    {
-                    data:'name',
-                    name:'name'
-                    },
-                    {
-                    data:'download',
-                    name:'download'
-                    },
+                    {data:'no',name:'no'},
+                    {data:'name',name:'name'},
+                    {data:'download',name:'download'},
                    
                 ]
                 });
