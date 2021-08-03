@@ -37,7 +37,7 @@
         	<div class="auto-container clearfix">
             	
 				<div class="pull-left logo-box">
-					<div class="logo"><a href="#"><img src="{{ asset('assets/images/nf_logo.png') }}" width="150px" alt="" title=""></a></div>
+					<div class="logo"><a href="/"><img src="{{ asset('assets/images/nf_logo.png') }}" width="150px" alt="" title=""></a></div>
 				</div>
 				
 				<div class="pull-right">
@@ -113,7 +113,7 @@
             <div class="auto-container clearfix">
                 <!--Logo-->
                 <div class="logo pull-left">
-                    <a href="#" title=""><img src="{{ asset('assets/images/nf_logo.png') }}" alt="" width="120px" title=""></a>
+                    <a href="/" title=""><img src="{{ asset('assets/images/nf_logo.png') }}" alt="" width="120px" title=""></a>
                 </div>
                 <!--Right Col-->
                 <div class="pull-right">
@@ -143,7 +143,7 @@
             <div class="close-btn"><span class="icon flaticon-multiply"></span></div>
             
             <nav class="menu-box">
-                <div class="nav-logo"><a href="#"><img src="{{ asset('assets/images/nf_logo.png') }}" width="150px" alt="" title=""></a></div>
+                <div class="nav-logo"><a href="/"><img src="{{ asset('assets/images/nf_logo.png') }}" width="150px" alt="" title=""></a></div>
                 <div class="menu-outer"><!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header--></div>
             </nav>
         </div><!-- End Mobile Menu -->
@@ -167,7 +167,7 @@
 					<div class="sidebar-info-contents">
 						<div class="content-inner">
 							<div class="logo">
-								<a href="#"><img src="{{ asset('assets/images/nf_logo.png') }}" alt="" /></a>
+								<a href="/"><img src="{{ asset('assets/images/nf_logo.png') }}" alt="" /></a>
 							</div>
 							{{-- <div class="content-box">
 								<h2>About Us</h2>
