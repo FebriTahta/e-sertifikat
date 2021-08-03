@@ -60,7 +60,7 @@
                                         Tempat pelaksanaan : {{ $item->tempat }}</p>
                                         <hr>
                                         <div class="form-group text-right">
-                                            <a href="{{ route('list.e_sertifikat',$item->slug) }}" class="btn btn-sm btn-success">masuk</a>
+                                            <a href="/sertifikat/{{ $item->slug }}" class="btn btn-sm btn-success">masuk</a>
                                         </div>
 									</div>
 								</div>
