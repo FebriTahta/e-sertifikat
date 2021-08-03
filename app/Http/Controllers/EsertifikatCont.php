@@ -33,4 +33,9 @@ class EsertifikatCont extends Controller
                 ->make(true);
         
     }
+
+    public function tes()
+    {
+        return 'TES TES TES';
+    }
 }
