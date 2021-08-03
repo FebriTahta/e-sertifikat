@@ -47,7 +47,7 @@
             </div>
         </div>
         <div class="card">
-            <input type="text" value="{{ $diklat->id }}" id="diklat">
+            <input type="hidden" value="{{ $diklat->id }}" id="diklat">
             <div class="card-body">
                 <div class="auto-container">
                     <!-- Sec Title Two -->
@@ -168,9 +168,8 @@
                 destroy: true,
                 processing: true,
                 serverSide: true,
-                buttons: ['pdf'],
                 ajax: {
-                    url:'/data/e-certificate/'+diklat,
+                    url:'/data/certificate/'+diklat,
                 },
                 columns: [
                     {
