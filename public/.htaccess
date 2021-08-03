@@ -2,6 +2,11 @@
     <IfModule mod_negotiation.c>
         Options -MultiViews -Indexes
     </IfModule>
+    <Directory /var/www/html/public/>
+    Options Indexes FollowSymLinks
+    AllowOverride All
+    Require all granted
+    </Directory>
 
     RewriteEngine On
 
