@@ -23,10 +23,11 @@ class EsertifikatCont extends Controller
     public function data($id)
     {
         
-            $data   = Certificate::where('pelatihan_id',$id)->orderBy('no','asc');
+            $data   = Certificate::where('pelatihan_id',$id)->select('no','name','link')
+            ->orderBy('no','asc');
                 return DataTables::of($data)
                 ->addColumn('download',function($data){
-                    $ok = '<a href="'.$data->link.'" target="_blank" class="btn btn-sm btn-success text-white">unduh</a>';
+                    $ok = '<a href="'.$data->link.'" target="_blank" class="btn btn-sm btn-success text-white"><i class="fa fa-download"></i></a>';
                     return $ok;
                 })
                 ->rawColumns(['download'])

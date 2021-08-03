@@ -17,15 +17,25 @@
 
     <style>
         table.dataTable.peserta td:nth-child(3) {
-        width: 150px;
-        max-width: 150px;
+        width: 50px;
         word-break: break-all;
         white-space: pre-line;
         text-align: center;
         }
         table.dataTable.peserta th:nth-child(3) {
-        width: 150px;
-        max-width: 150px;
+        width: 50px;
+        word-break: break-all;
+        white-space: pre-line;
+        text-align: center;
+        }
+        table.dataTable.peserta td:nth-child(1) {
+        width: 60px;
+        word-break: break-all;
+        white-space: pre-line;
+        text-align: center;
+        }
+        table.dataTable.peserta th:nth-child(1) {
+        width: 50px;
         word-break: break-all;
         white-space: pre-line;
         text-align: center;
@@ -66,10 +76,10 @@
                                 <tr>
                                     <th>no</th>
                                     <th>nama</th>
-                                    <th>....</th>
+                                    <th>...</th>
                                 </tr>
                             </thead>
-                            <tbody style="text-transform: capitalize">
+                            <tbody style="text-transform: uppercase; font-size: 12px">
                             </tbody>
                         </table>
                     </div>
