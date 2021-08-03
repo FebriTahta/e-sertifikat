@@ -47,7 +47,7 @@
             </div>
         </div>
         <div class="card">
-            <input type="hidden" value="{{ $diklat->id }}" id="diklat">
+            <input type="hidden" value="{{route('data.e_sertifikat',$diklat->id)}}" id="diklat">
             <div class="card-body">
                 <div class="auto-container">
                     <!-- Sec Title Two -->
@@ -79,71 +79,7 @@
         </div>
     </section>
 
-    <div class="modal fade" id="import" tabindex="-1" role="dialog" aria-labelledby="termsLabel" aria-hidden="true">
-		<div class="modal-dialog modal-dialog-centered modal-lg">
-			<div class="modal-content">
-				<div class="modal-body text-danger">
-                    <div class="sec-title centered">
-                        <div class="title">Import Data Dokumen E-Certificate Peserta Diklat</div>
-                        <div class="separate"></div>
-                    </div>
-
-					<form id="formimport" action="" class="was-validate" enctype="multipart/form-data">@csrf
-                        <div class="card">
-                            <div class="card-body">
-                                <input type="hidden" name="tanggal" value="{{ $diklat->tanggal }}">
-                                <input type="hidden" name="id" value="{{ $diklat->id }}">
-                                <h4 class="card-title">File import</h4>
-                                <p class="card-title-desc">Pastikan file yang akan anda import sudah sesuai dengan ketentuan yang berlaku</p>
-                                <div class="input-group">
-                                    <div class="custom-file">
-                                        <input type="file" class="custom-file-input" id="inputGroupFile02" name="file"/>
-                                        <label class="custom-file-label" for="inputGroupFile02">Choose file</label>
-                                    </div>
-                                    <div class="input-group-append">
-                                        <input class="btn btn-primary" type="submit" id="btnimport" value="import">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-				</div>
-			</div>
-		</div>
-	</div>
-
-    <div class="modal fade" id="import" tabindex="-1" role="dialog" aria-labelledby="termsLabel" aria-hidden="true">
-		<div class="modal-dialog modal-dialog-centered modal-lg">
-			<div class="modal-content">
-				<div class="modal-body text-danger">
-                    <div class="sec-title centered">
-                        <div class="title">Import Data Dokumen E-Certificate Peserta Diklat</div>
-                        <div class="separate"></div>
-                    </div>
-
-					<form id="formimport" action="" class="was-validate" enctype="multipart/form-data">@csrf
-                        <div class="card">
-                            <div class="card-body">
-                                <input type="hidden" name="tanggal" value="{{ $diklat->tanggal }}">
-                                <input type="hidden" name="id" value="{{ $diklat->id }}">
-                                <h4 class="card-title">File import</h4>
-                                <p class="card-title-desc">Pastikan file yang akan anda import sudah sesuai dengan ketentuan yang berlaku</p>
-                                <div class="input-group">
-                                    <div class="custom-file">
-                                        <input type="file" class="custom-file-input" id="inputGroupFile02" name="file"/>
-                                        <label class="custom-file-label" for="inputGroupFile02">Choose file</label>
-                                    </div>
-                                    <div class="input-group-append">
-                                        <input class="btn btn-primary" type="submit" id="btnimport" value="import">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-				</div>
-			</div>
-		</div>
-	</div>
+    
 @endsection
 
 @section('script')
@@ -170,7 +106,7 @@
                 processing: true,
                 serverSide: true,
                 ajax: {
-                    url:'/data/'+id,
+                    url: id,
                 },
                 columns: [
                     {data:'no',name:'no'},
