@@ -22,4 +22,4 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 Route::get('/',[EsertifikatCont::class, 'index'])->name('index.e_sertifikat');
 Route::get('/data/{id}',[EsertifikatCont::class, 'data'])->name('data.e_sertifikat');
-Route::get('/sertifikat/{slug_diklat}',[EsertifikatCont::class, 'list'])->name('list.e_sertifikat');
+Route::get('/sertifikat/{slug}',[EsertifikatCont::class, 'list'])->name('list.e_sertifikat');

@@ -14,7 +14,7 @@ class EsertifikatCont extends Controller
         return view('e_sertifikat.index',compact('diklat'));
     }
 
-    public function list(Request $request, $slug_diklat)
+    public function list($slug)
     {
         $diklat = Pelatihan::where('slug',$slug_diklat)->first();
         return view('e_sertifikat.list',compact('diklat'));
