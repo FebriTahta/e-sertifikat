@@ -7,13 +7,6 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     
     <link href="{{ URL::asset('tilawatipusat/libs/datatables/datatables.min.css')}}" rel="stylesheet" type="text/css" />
-    <meta property="og:site_name" content="E-Certificate">
-    <meta property="og:title" content="Download E-Certificate"/>
-    <meta property="og:description" content="Selamat datang para pecinta Al-Qur'an, terimakasih telah ikut serta
-     dalam diklat tilawati. download e-certificate anda disini"/>
-    <meta property="og:image" itemprop="image" content="{{ asset('assets/images/tag_sertifikat.jpg') }}">
-    <meta property="og:type" content="website" />
-    <meta property="og:updated_time" content="1440432930" />
 
     <style>
         table.dataTable.peserta td:nth-child(3) {
