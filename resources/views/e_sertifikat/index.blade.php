@@ -8,9 +8,8 @@
     <meta property="og:description" content="Selamat datang para pecinta Al-Qur'an, terimakasih telah ikut serta
      dalam diklat tilawati. download e-certificate anda disini"/>
      <meta property="og:image" itemprop="image" content="{{ asset('assets/images/tumb.jpeg') }}">
-    <meta property="og:type" content="website" />
-    <meta property="og:updated_time" content="1440432930" />
 @endsection
+
 @section('content')
 
     <!--Daftar Diklat-->
