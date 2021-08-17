@@ -52,7 +52,7 @@
                 
                 <h2>{{ $diklat->program->name }}</h2>
                 <?php date_default_timezone_set('Asia/Jakarta'); $date=$diklat->tanggal;?>
-                <p>( {{ Carbon\Carbon::parse($date)->isoFormat('D MMMM Y') }} )</p>
+                <p>( {{ Carbon\Carbon::parse($date)->isoFormat('D MMMM Y') }} - {{ $sertifikat }} Peserta) </p>
                 <div class="separate"></div>
             </div>
         </div>

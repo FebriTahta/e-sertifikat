@@ -16,8 +16,9 @@ class EsertifikatCont extends Controller
 
     public function list($slug)
     {
-        $diklat = Pelatihan::where('slug',$slug)->first();
-        return view('e_sertifikat.list',compact('diklat'));
+        $diklat     = Pelatihan::where('slug',$slug)->first();
+        $sertifikat = Certificate::where('pelatihan_id',$diklat->id)->count();
+        return view('e_sertifikat.list',compact('diklat','sertifikat'));
     }
 
     public function data($id)
