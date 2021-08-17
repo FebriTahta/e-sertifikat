@@ -7,31 +7,11 @@
     <meta property="og:title" content="Download E-Certificate"/>
     <meta property="og:description" content="Selamat datang para pecinta Al-Qur'an, terimakasih telah ikut serta
      dalam diklat tilawati. download e-certificate anda disini"/>
-     <meta property="og:image" itemprop="image" content="{{ asset('assets/images/tag_sertifikat.jpg') }}">
+     <meta property="og:image" itemprop="image" content="{{ asset('assets/images/tumb.jpeg') }}">
     <meta property="og:type" content="website" />
     <meta property="og:updated_time" content="1440432930" />
 @endsection
 @section('content')
-    <!-- Banner Section -->
-    {{-- <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-        </ol>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="{{ asset('tilawatipusat/landing/images/banner.jpg') }}" class="d-block w-100" alt="gambar">
-          </div>
-        </div>
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-    </div> --}}
-	<!-- End Banner Section -->
 
     <!--Daftar Diklat-->
     <section class="faq-section">
