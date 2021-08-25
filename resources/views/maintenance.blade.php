@@ -22,6 +22,6 @@
     <div>
         <p>Server dalam proses pemindahan dari US ke Indonesia untuk optimasi kecepatan akses data. Apabila proses sudah selesai akan segera kami infokan</p>
 		<p>Hormat kami</p>
-        <p>&mdash; IT & Administration Tilawati Pusat</p>
+        <p>&mdash; IT & Administrasi Tilawati Pusat</p>
     </div>
 </article>
