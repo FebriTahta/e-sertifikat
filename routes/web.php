@@ -14,14 +14,13 @@ use App\Http\Controllers\EsertifikatCont;
 */
 
 Route::get('/', function () {
-   	// return redirect('/');
-	return view('maintenance');
-	// echo "we";
+	return redirect('/');
+ // return view('/welcome');
 });
 // Auth::routes();
 // Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-// Route::get('/',[EsertifikatCont::class, 'index'])->name('index.e_sertifikat');
+Route::get('/',[EsertifikatCont::class, 'index'])->name('index.e_sertifikat');
 Route::get('/data/{id}',[EsertifikatCont::class, 'data'])->name('data.e_sertifikat');
 Route::get('/{slug}',[EsertifikatCont::class, 'list'])->name('list.e_sertifikat');
 
