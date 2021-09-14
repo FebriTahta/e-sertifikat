@@ -32,7 +32,7 @@ class EsertifikatCont extends Controller
     public function data($id)
     {
         
-            $data   = Certificate::where('pelatihan_id',$id)->select('no','name','link')
+            $data   = Certificate::where('Induksertifikat_id',$id)->select('no','name','link')
             ->orderBy('no','asc');
                 return DataTables::of($data)
                 ->addColumn('download',function($data){
