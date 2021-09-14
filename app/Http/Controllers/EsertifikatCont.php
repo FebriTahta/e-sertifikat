@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 use App\Models\Pelatihan;
+use App\Models\Program;
 use App\Models\Certificate;
+use App\Models\Induksertifikat;
 use DataTables;
 use Illuminate\Http\Request;
 
@@ -16,9 +18,15 @@ class EsertifikatCont extends Controller
 
     public function list($slug)
     {
-        $diklat     = Pelatihan::where('slug',$slug)->first();
-        $sertifikat = Certificate::where('pelatihan_id',$diklat->id)->count();
+        $diklat     = Induksertifikat::where('slug',$slug)->first();
+        $sertifikat = Certificate::where('Induksertifikat_id',$diklat->id)->count();
         return view('e_sertifikat.list',compact('diklat','sertifikat'));
+    }
+
+    public function semua()
+    {
+        $program = Program::select('name','id')->get();
+        return view('e_sertifikat.semuadata',compact('program'));
     }
 
     public function data($id)
@@ -36,8 +44,9 @@ class EsertifikatCont extends Controller
         
     }
 
-    public function tes()
+    public function search(Reqest $request)
     {
-        return 'TES TES TES';
+        $data = Certificate::whereBetween('tanggal', array($request->dari, $request->sampai))->get();
+        return view('');
     }
 }

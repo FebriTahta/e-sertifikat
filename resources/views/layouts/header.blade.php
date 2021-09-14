@@ -88,9 +88,11 @@
 										<li><a href="#">About Us</a></li>
 									</ul>
 								</li>
-								<li class="dropdown"><a href="#">Menu</a>
+								<li class="dropdown"><a href="/">Menu</a>
 									<ul>
-										<li><a href="#">Daftar Seluruh E-Certificate</a></li>
+										<li>
+											<a href="{{route('seluruh.e_sertifikat')}}">Daftar Seluruh E-Certificate</a>
+										</li>
 									</ul>
 								</li>
 							</ul>
