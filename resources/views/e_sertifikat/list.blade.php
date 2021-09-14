@@ -44,8 +44,8 @@
                 <div class="title">Unduh E-Certificate</div>
                 
                 <h2>{{ $diklat->program->name }}</h2>
-                <?php date_default_timezone_set('Asia/Jakarta'); $date=$diklat->tanggal;?>
-                <p>( {{ Carbon\Carbon::parse($date)->isoFormat('D MMMM Y') }} - {{ $sertifikat }} Peserta) </p>
+                <?php date_default_timezone_set('Asia/Jakarta'); $date=$diklat->tgl_awal;?>
+                <p>( {{ $tgl }} - {{ $sertifikat }} Peserta) </p>
                 <div class="separate"></div>
             </div>
         </div>

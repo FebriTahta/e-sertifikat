@@ -6,6 +6,7 @@ use App\Models\Program;
 use App\Models\Certificate;
 use App\Models\Induksertifikat;
 use DataTables;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 
 class EsertifikatCont extends Controller
@@ -19,8 +20,16 @@ class EsertifikatCont extends Controller
     public function list($slug)
     {
         $diklat     = Induksertifikat::where('slug',$slug)->first();
+        if ($diklat->tgl_akhir !== null) {
+            # code...
+            $tgl = Carbon::parse($diklat->tgl_awal)->isoFormat('dddd, D MMMM Y').' - '.Carbon::parse($diklat->tgl_akhir)->isoFormat('dddd, D MMMM Y');
+            return $tgl;
+        }else{
+            $tgl = Carbon::parse($diklat->tgl_awal)->isoFormat('dddd, D MMMM Y');
+            return $tgl;
+        }
         $sertifikat = Certificate::where('Induksertifikat_id',$diklat->id)->count();
-        return view('e_sertifikat.list',compact('diklat','sertifikat'));
+        return view('e_sertifikat.list',compact('diklat','sertifikat','tgl'));
     }
 
     public function semua()
