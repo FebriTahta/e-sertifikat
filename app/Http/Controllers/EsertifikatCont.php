@@ -13,7 +13,7 @@ class EsertifikatCont extends Controller
 {
     public function index()
     {
-        $diklat = Pelatihan::orderBy('tanggal','desc')->limit(6)->get();
+        $diklat = Induksertifikat::orderBy('tgl_awal','desc')->limit(6)->get();
         return view('e_sertifikat.index',compact('diklat'));
     }
 
