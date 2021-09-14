@@ -10,15 +10,24 @@ class Certificate extends Model
     use HasFactory;
 
     protected $fillable = [
+        'induksertifikat_id',
         'pelatihan_id',
+        'program_id',
+        'cabang_id',
+        'tanggal',
         'peserta_id',
-        'name',
         'no',
+        'name',
         'link',
     ];
 
     public function peserta()
     {
         return $this->belongsTo(Peserta::class);
+    }
+	
+	public function induksertifikat()
+    {
+        return $this->belongsTo(Induksertifikat::class);
     }
 }
