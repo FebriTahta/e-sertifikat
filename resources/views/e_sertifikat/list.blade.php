@@ -72,7 +72,7 @@
                                     <th>...</th>
                                 </tr>
                             </thead>
-                            <tbody style="text-transform: uppercase; font-size: 12px">
+                            <tbody style="font-size: 12px">
                             </tbody>
                         </table>
                     </div>
