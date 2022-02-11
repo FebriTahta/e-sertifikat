@@ -43,7 +43,7 @@
             <div class="sec-title centered">
                 <div class="title">Unduh E-Certificate</div>
                 
-                <h2>{{ $diklat->program->name }}</h2>
+                <h2>{{ $diklat->program }}</h2>
                 <?php date_default_timezone_set('Asia/Jakarta'); $date=$diklat->tgl_awal;?>
                 <p>( {{ $tgl }} - {{ $sertifikat }} Peserta) </p>
                 <div class="separate"></div>
