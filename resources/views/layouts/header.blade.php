@@ -79,7 +79,7 @@
 							</button>
 						</div>
 						
-						<div class="navbar-collapse collapse clearfix" id="navbarSupportedContent">
+						{{-- <div class="navbar-collapse collapse clearfix" id="navbarSupportedContent">
 							<ul class="navigation clearfix">
 								<li class="current dropdown"><a href="/">Home</a>
 								</li>
@@ -96,7 +96,7 @@
 									</ul>
 								</li>
 							</ul>
-						</div>
+						</div> --}}
 					</nav>
 					
 					<!-- Main Menu End-->
@@ -122,7 +122,7 @@
                     <a href="/" title=""><img src="{{ asset('assets/images/nf_logo.png') }}" alt="" width="120px" title=""></a>
                 </div>
                 <!--Right Col-->
-                <div class="pull-right">
+                {{-- <div class="pull-right">
                     <!-- Main Menu -->
                     <nav class="main-menu">
                         <!--Keep This Empty / Menu will come through Javascript-->
@@ -139,7 +139,7 @@
 						
 					</div>
 					
-                </div>
+                </div> --}}
             </div>
         </div><!-- End Sticky Menu -->
     
