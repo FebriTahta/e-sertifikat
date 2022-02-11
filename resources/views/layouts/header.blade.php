@@ -44,7 +44,7 @@
 					<div class="logo"><a href="/"><img src="{{ asset('assets/images/nf_logo.png') }}" width="150px" alt="" title=""></a></div>
 				</div>
 				
-				<div class="pull-right">
+				{{-- <div class="pull-right">
 					
 					<!-- Search Box -->
 					<div class="search-box">
@@ -56,14 +56,14 @@
 						</form>
 					</div>
 					
-				</div>
+				</div> --}}
 				
             </div>
         </div>
         <!--End Header Upper-->
 		
 		<!-- Header Upper -->
-        <div class="header-lower">
+        {{-- <div class="header-lower">
         	<div class="auto-container clearfix">
 				<div class="nav-outer clearfix">
 					<!--Mobile Navigation Toggler-->
@@ -79,7 +79,7 @@
 							</button>
 						</div>
 						
-						{{-- <div class="navbar-collapse collapse clearfix" id="navbarSupportedContent">
+						<div class="navbar-collapse collapse clearfix" id="navbarSupportedContent">
 							<ul class="navigation clearfix">
 								<li class="current dropdown"><a href="/">Home</a>
 								</li>
@@ -96,7 +96,7 @@
 									</ul>
 								</li>
 							</ul>
-						</div> --}}
+						</div>
 					</nav>
 					
 					<!-- Main Menu End-->
@@ -111,7 +111,7 @@
 				</div>
 				
             </div>
-        </div>
+        </div> --}}
         <!-- End Header Lower -->
         
 		<!-- Sticky Header  -->
