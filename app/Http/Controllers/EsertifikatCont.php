@@ -26,7 +26,7 @@ class EsertifikatCont extends Controller
         // }else{
         //     $tgl = Carbon::parse($diklat->tgl_awal)->isoFormat('dddd, D MMMM Y');
         // }
-        $tgl = Carbon::parse($diklat->tgl_awal)->isoFormat('dddd, D MMMM Y');
+        // $tgl = Carbon::parse($diklat->tgl_awal)->isoFormat('dddd, D MMMM Y');
         $sertifikat = Certificate::where('Induksertifikat_id',$diklat->id)->count();
         return view('e_sertifikat.list',compact('diklat','sertifikat','tgl'));
     }
