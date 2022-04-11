@@ -17,7 +17,7 @@ class EsertifikatCont extends Controller
         return view('e_sertifikat.index',compact('diklat'));
     }
 
-    public function list($slug)
+    public function list($slug,$id)
     {
         $diklat     = Induksertifikat::where('slug',$slug)->first();
         if ($diklat->tgl_akhir !== null) {

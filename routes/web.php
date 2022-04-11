@@ -22,5 +22,5 @@ Route::get('/', function () {
 
 Route::get('/',[EsertifikatCont::class, 'index'])->name('index.e_sertifikat');
 Route::get('/data/{id}',[EsertifikatCont::class, 'data'])->name('data.e_sertifikat');
-Route::get('/{slug}',[EsertifikatCont::class, 'list'])->name('list.e_sertifikat');
+Route::get('/{slug}/{id}',[EsertifikatCont::class, 'list'])->name('list.e_sertifikat');
 Route::get('/seluruh/data/e-sertifikat',[EsertifikatCont::class, 'semua'])->name('seluruh.e_sertifikat');
