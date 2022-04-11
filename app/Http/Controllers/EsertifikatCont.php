@@ -19,7 +19,7 @@ class EsertifikatCont extends Controller
 
     public function list($slug,$id)
     {
-        $diklat     = Induksertifikat::find($id)->first();
+        $diklat     = Induksertifikat::where('id',$id)->first();
         if ($diklat->tgl_akhir !== null) {
             # code...
             $tgl = Carbon::parse($diklat->tgl_awal)->isoFormat('dddd, D MMMM Y').' - '.Carbon::parse($diklat->tgl_akhir)->isoFormat('dddd, D MMMM Y');
