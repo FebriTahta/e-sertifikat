@@ -39,7 +39,7 @@
                                         Tempat pelaksanaan : {{ $item->tempat }}</p>
                                         <hr>
                                         <div class="form-group text-right">
-                                            <a href="/{{ $item->slug }}" class="btn btn-sm btn-success">masuk</a>
+                                            <a href="/{{ $item->slug }}/{{$item->id}}" class="btn btn-sm btn-success">masuk</a>
                                         </div>
 									</div>
 								</div>
