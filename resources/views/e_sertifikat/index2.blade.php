@@ -20,10 +20,8 @@
 			<div class="sec-title centered">
 				<div class="title">Data E-Certificate</div>
 				<h2>Cetak E-Certificate</h2>
-				<div class="separate"></div><br>
-				<a href="/seluruh/data/e-sertifikat" class="btn text-white" style="background-color: pink">Tampilkan Seluruh Sertifikat</a>
+				<div class="separate"></div>
 			</div>
-			
 			<div class="row clearfix">
 				@foreach ($diklat as $key=>$item)
                 <!-- Accordion Column -->
@@ -32,12 +30,16 @@
 					<ul class="accordion-box">	
 						<!--Block-->
 						<li class="accordion block"> <?php date_default_timezone_set('Asia/Jakarta'); $date=$item->tgl_awal;?>
-							<div class="acc-btn" style="text-transform: capitalize"><div class="icon-outer"><span class="icon icon-plus flaticon-plus-symbol"></span> <span class="icon icon-minus flaticon-substract"></span></div><span style="text-transform: capitalize"> {{ Carbon\Carbon::parse($date)->isoFormat('dddd, D MMMM Y') }} -</span> {{ strtolower($item->program->name) }}</div>
+							<div class="acc-btn" style="text-transform: capitalize"><div class="icon-outer"><span class="icon icon-plus flaticon-plus-symbol"></span> <span class="icon icon-minus flaticon-substract"></span></div><span style="text-transform: capitalize"> {{ Carbon\Carbon::parse($date)->isoFormat('dddd, D MMMM Y') }} -</span> 
+							{{ strtolower($item->program->name) }}
+							</div>
 							<div class="acc-content">
 								<div class="content">
 									<div class="text">
 										<p style="text-transform: capitalize">
-                                        {{ strtolower($item->cabang->name) }} - {{ strtolower($item->cabang->kabupaten->nama) }}  <br/>
+                                        {{ strtolower($item->cabang->name) }} - 
+										{{ strtolower($item->cabang->kabupaten->nama) }}  
+										<br/>
                                         Tempat pelaksanaan : {{ $item->tempat }}</p>
                                         <hr>
                                         <div class="form-group text-right">

@@ -33,8 +33,10 @@ class EsertifikatCont extends Controller
 
     public function semua()
     {
-        $program = Program::select('name','id')->get();
-        return view('e_sertifikat.semuadata',compact('program'));
+        // $program = Program::select('name','id')->get();
+        // return view('e_sertifikat.semuadata',compact('program'));
+        $diklat = Induksertifikat::orderBy('tgl_awal','desc')->get();
+        return view('e_sertifikat.index2',compact('diklat'));
     }
 
     public function data($id)
