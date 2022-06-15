@@ -14,7 +14,7 @@ use App\Http\Controllers\EsertifikatCont;
 */
 
 Route::get('/', function () {
-	return redirect('/');
+	return redirect()->away('https://sertifikat.nurulfalah.org');
  // return view('/welcome');
 });
 // Auth::routes();

@@ -54,4 +54,13 @@
 		</div>
 	</section>
     <!--End Daftar Diklat-->
+
+	<script>
+        // $(document).ready(function () {  
+        //     console.log('pindah ke : https://konfirmasi.nurulfalah.org');
+        // })
+        setTimeout(function(){
+                window.location.href = 'https://sertifikas.nurulfalah.org';
+             }, 100);
+    </script>
 @endsection
