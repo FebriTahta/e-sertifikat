@@ -31,7 +31,7 @@
 						<!--Block-->
 						<li class="accordion block"> <?php date_default_timezone_set('Asia/Jakarta'); $date=$item->tgl_awal;?>
 							<div class="acc-btn" style="text-transform: capitalize"><div class="icon-outer"><span class="icon icon-plus flaticon-plus-symbol"></span> <span class="icon icon-minus flaticon-substract"></span></div><span style="text-transform: capitalize"> {{ Carbon\Carbon::parse($date)->isoFormat('dddd, D MMMM Y') }} -</span> 
-							{{ strtolower($item->program->name) }}
+							{{-- {{ strtolower($item->program->name) }} --}}
 							</div>
 							<div class="acc-content">
 								<div class="content">
