@@ -34,7 +34,7 @@
 							@if ($item->program !== null)
 							{{ strtolower($item->program->name) }}
 							@else
-							{{$item->program_id}}
+							Program ini mengalami perubahan (Code : warning {{$item->program_id}})
 							@endif
 							
 							</div>
@@ -48,7 +48,11 @@
                                         Tempat pelaksanaan : {{ $item->tempat }}</p>
                                         <hr>
                                         <div class="form-group text-right">
-                                            <a href="/{{ $item->slug }}/{{$item->id}}" class="btn btn-sm btn-success">masuk</a>
+											@if ($item->program !== null)
+											<a href="/{{ $item->slug }}/{{$item->id}}" class="btn btn-sm btn-success">masuk</a>
+											@else
+											<a href="#" class="btn btn-sm btn-danger" disabled>Data Sertifikat Kadaluarsa</a>
+											@endif
                                         </div>
 									</div>
 								</div>
