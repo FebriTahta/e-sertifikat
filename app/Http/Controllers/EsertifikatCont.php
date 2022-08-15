@@ -11,6 +11,12 @@ use Illuminate\Http\Request;
 
 class EsertifikatCont extends Controller
 {
+    public function fixing()
+    {
+        $diklat = Pelatihan::where('program_id',5)->count();
+        return $diklat;
+    }
+
     public function index()
     {
         $diklat = Induksertifikat::orderBy('tgl_awal','desc')->limit(6)->get();

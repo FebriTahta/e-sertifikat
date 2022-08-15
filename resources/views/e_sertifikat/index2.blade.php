@@ -31,7 +31,12 @@
 						<!--Block-->
 						<li class="accordion block"> <?php date_default_timezone_set('Asia/Jakarta'); $date=$item->tgl_awal;?>
 							<div class="acc-btn" style="text-transform: capitalize"><div class="icon-outer"><span class="icon icon-plus flaticon-plus-symbol"></span> <span class="icon icon-minus flaticon-substract"></span></div><span style="text-transform: capitalize"> {{ Carbon\Carbon::parse($date)->isoFormat('dddd, D MMMM Y') }} -</span> 
+							@if ($item->program !== null)
 							{{ strtolower($item->program->name) }}
+							@else
+							Program ini mengalami perubahan (Code : warning {{$item->program_id}})
+							@endif
+							
 							</div>
 							<div class="acc-content">
 								<div class="content">
@@ -43,7 +48,11 @@
                                         Tempat pelaksanaan : {{ $item->tempat }}</p>
                                         <hr>
                                         <div class="form-group text-right">
-                                            <a href="/{{ $item->slug }}/{{$item->id}}" class="btn btn-sm btn-success">masuk</a>
+											@if ($item->program !== null)
+											<a href="/{{ $item->slug }}/{{$item->id}}" class="btn btn-sm btn-success">masuk</a>
+											@else
+											<a href="#" class="btn btn-sm btn-danger" disabled>Data Sertifikat Kadaluarsa</a>
+											@endif
                                         </div>
 									</div>
 								</div>
