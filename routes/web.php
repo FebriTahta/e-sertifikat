@@ -13,10 +13,10 @@ use App\Http\Controllers\EsertifikatCont;
 |
 */
 
-Route::get('/', function () {
-	return redirect()->away('https://sertifikat.nurulfalah.org');
- // return view('/welcome');
-});
+// Route::get('/', function () {
+	// return redirect()->away('https://sertifikat.nurulfalah.org');
+//  return view('/welcome');
+// });
 // Auth::routes();
 // Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
